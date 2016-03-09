@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D92F9DF0EF797736603F67543044BD1E1D03B5AE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D92F9DF0EF797736603F67543044BD1E1D03B5AE" : 0,
+    "9D00176DF877343D915D49228AA88B693E84E972" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "912ED36F-E49A-48CF-A6A4-116F5686BAE0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D92F9DF0EF797736603F67543044BD1E1D03B5AE" : "InstagramNnV\/",
+    "9D00176DF877343D915D49228AA88B693E84E972" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "InstagramNnV",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "InstagramNnV.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CubeVic\/superTip.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9D00176DF877343D915D49228AA88B693E84E972"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/donguyenvt\/InstagramNnV.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D92F9DF0EF797736603F67543044BD1E1D03B5AE"
+    }
+  ]
+}
