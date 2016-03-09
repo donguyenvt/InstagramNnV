@@ -72,6 +72,18 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var vc = segue.destinationViewController as! PhotoDetailsViewController
+        var indexPath = tableView.indexPathForCell(sender as! UITableViewCell)
+        
+        let content = rawData![indexPath!.row] as! NSDictionary
+        let images = content["images"] as! NSDictionary
+        let standard_resolution = images["standard_resolution"]
+        let photoUrl = standard_resolution!["url"] as! String
+        vc.photoUrl = NSURL(string: photoUrl)!
+        
+    }
 
 
 }

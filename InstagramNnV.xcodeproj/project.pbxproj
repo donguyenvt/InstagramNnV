@@ -14,6 +14,7 @@
 		CB32CFF41C904AF2008DB2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB32CFF31C904AF2008DB2EB /* Assets.xcassets */; };
 		CB32CFF71C904AF2008DB2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB32CFF51C904AF2008DB2EB /* LaunchScreen.storyboard */; };
 		CBADD0CE1C90571700E1DA37 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBADD0CD1C90571700E1DA37 /* PhotoTableViewCell.swift */; };
+		FEC93E6D1C9079CD0053BED4 /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC93E6C1C9079CD0053BED4 /* PhotoDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CB32CFF61C904AF2008DB2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB32CFF81C904AF2008DB2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBADD0CD1C90571700E1DA37 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		FEC93E6C1C9079CD0053BED4 /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				CB32CFEE1C904AF2008DB2EB /* PhotosViewController.swift */,
+				FEC93E6C1C9079CD0053BED4 /* PhotoDetailsViewController.swift */,
 			);
 			name = "Views Controllers";
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC93E6D1C9079CD0053BED4 /* PhotoDetailsViewController.swift in Sources */,
 				CB32CFEF1C904AF2008DB2EB /* PhotosViewController.swift in Sources */,
 				CB32CFED1C904AF2008DB2EB /* AppDelegate.swift in Sources */,
 				CBADD0CE1C90571700E1DA37 /* PhotoTableViewCell.swift in Sources */,
