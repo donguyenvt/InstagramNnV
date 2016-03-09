@@ -72,13 +72,13 @@
 		CB32CFEB1C904AF2008DB2EB /* InstagramNnV */ = {
 			isa = PBXGroup;
 			children = (
+				FEC93E6B1C9060170053BED4 /* Views Controllers */,
+				FEC93E6A1C90600C0053BED4 /* Views */,
 				CB32CFEC1C904AF2008DB2EB /* AppDelegate.swift */,
-				CB32CFEE1C904AF2008DB2EB /* PhotosViewController.swift */,
 				CB32CFF01C904AF2008DB2EB /* Main.storyboard */,
 				CB32CFF31C904AF2008DB2EB /* Assets.xcassets */,
 				CB32CFF51C904AF2008DB2EB /* LaunchScreen.storyboard */,
 				CB32CFF81C904AF2008DB2EB /* Info.plist */,
-				CBADD0CD1C90571700E1DA37 /* PhotoTableViewCell.swift */,
 			);
 			path = InstagramNnV;
 			sourceTree = "<group>";
@@ -89,6 +89,22 @@
 				BE68D2D7C0276DD84B9AE3BD /* Pods_InstagramNnV.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEC93E6A1C90600C0053BED4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CBADD0CD1C90571700E1DA37 /* PhotoTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FEC93E6B1C9060170053BED4 /* Views Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB32CFEE1C904AF2008DB2EB /* PhotosViewController.swift */,
+			);
+			name = "Views Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AFNetworking
 
 class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -19,7 +20,7 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         tableView.dataSource = self
         tableView.delegate = self
-        
+        tableView.rowHeight = 320
         
         
         let clientId = "e05c462ebd86446ea48a5af73769b602"
@@ -39,6 +40,7 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
                             //NSLog("response: \(responseDictionary)")
                             self.rawData = responseDictionary["data"] as! [NSDictionary]
                             print(self.rawData)
+                            self.tableView.reloadData()
                     }
                 }
         });
@@ -47,12 +49,20 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rawData!.count
+        return rawData?.count ?? 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("PhotosCell", forIndexPath: indexPath) as! PhotoTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("PhotoCell", forIndexPath: indexPath) as! PhotoTableViewCell
+        let content = rawData![indexPath.row] as! NSDictionary
+        let images = content["images"] as! NSDictionary
+        let standard_resolution = images["standard_resolution"]
+        let photoUrl = standard_resolution!["url"] as! String
+        let url = NSURL(string: photoUrl)
+        
+        cell.photoImageView.setImageWithURL(url!)
+        
         return cell
         
     }
